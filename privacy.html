@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for ASAP: Expense &amp; Money Manager by Aditi Apps Worlds.">
+<title>Privacy Policy — ASAP: Expense &amp; Money Manager</title>
+<style>
+:root{color-scheme:light;--teal:#0f766e;--ink:#1e293b;--sub:#475569;--light:#f0fdfa;--border:#d9e5e8}
+*{box-sizing:border-box}body{margin:0;background:#f7fafb;color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:860px;margin:32px auto;background:#fff;padding:clamp(22px,5vw,52px);border-radius:18px;border:1px solid var(--border);box-shadow:0 8px 35px #0f172a0b}
+header{border-bottom:2px solid var(--border);padding-bottom:22px;margin-bottom:22px}h1{font-size:clamp(25px,4vw,36px);margin:0 0 10px;color:var(--teal);line-height:1.24}h2{font-size:21px;margin:34px 0 10px;color:var(--teal)}h3{font-size:17px;margin:25px 0 8px}p,ul,ol{margin:0 0 15px}li{margin:8px 0}a{color:#0f766e;overflow-wrap:anywhere}strong{font-weight:690}.muted{color:var(--sub)}.notice{background:var(--light);border-left:4px solid #0d9488;padding:16px 18px;border-radius:8px;margin:22px 0}.warn{background:#fffbeb;border-left-color:#b45309}nav{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0 0}nav a{font-weight:650}code{overflow-wrap:anywhere;background:#f1f5f9;padding:2px 5px;border-radius:4px}footer{border-top:1px solid var(--border);padding-top:20px;margin-top:45px;color:var(--sub);font-size:14px}ol,ul{padding-left:26px} @media(max-width:680px){body{background:white}main{margin:0;border:none;border-radius:0;box-shadow:none}}</style>
+</head>
+<body><main>
+<header><h1>Privacy Policy</h1>
+<p class="muted"><strong>ASAP: Expense &amp; Money Manager</strong> · Developer: Aditi Apps Worlds<br>
+Android package: <code>com.asap.expensetracker</code><br>
+Last updated: 29 October 2026</p>
+<nav aria-label="Legal pages"><a href="privacy.html">Privacy Policy</a><a href="data-deletion.html">Data Deletion</a><a href="mailto:aditi.piyush948@gmail.com">Contact Support</a></nav>
+</header>
+
+<div class="notice"><strong>Privacy summary.</strong> ASAP is an offline-first personal expense and money manager. Financial accounts, transactions, budgets, imported documents and SMS-derived review candidates are processed locally on your device. ASAP does not operate a financial-data backend or require an account. The bundled Google ML Kit component may independently send limited technical diagnostics and device/app information to Google, as explained below.</div>
+<h2>1. Who operates the app?</h2>
+<p>This policy applies to <strong>ASAP: Expense &amp; Money Manager</strong> (Android package <code>com.asap.expensetracker</code>), offered by <strong>Aditi Apps Worlds</strong>. For privacy inquiries, contact <a href="mailto:aditi.piyush948@gmail.com">aditi.piyush948@gmail.com</a>.</p>
+<h2>2. Information processed on your phone</h2>
+<ul>
+<li><strong>Financial information:</strong> accounts, balances, transactions, transfers, refunds, credit cards, budgets, reminders, merchant names, notes and financial audit history are stored in an on-device SQLite database. The app does not upload this financial ledger to a developer server.</li>
+<li><strong>Bank statements and documents:</strong> PDFs, CSVs and user-selected email archive files may be imported using the device document picker and processed locally. Imported candidates require user review before posting to the financial ledger.</li>
+<li><strong>Receipt images:</strong> a user may select or capture images for local receipt processing. The text recognition feature uses bundled, on-device Google ML Kit models; the receipt image itself is not intentionally uploaded to a developer or cloud OCR server.</li>
+<li><strong>Optional voice entry:</strong> on supported Android versions, this feature uses an available on-device speech recognizer. The app does not store recorded audio files. Voice entry remains optional.</li>
+<li><strong>Optional App Lock:</strong> PIN-based protection stores a salted password-derived verifier, not the plaintext PIN. Android biometric authentication is performed through system interfaces; the app does not collect biometric templates.</li>
+</ul>
+<h2>3. Financial SMS detection (approval-gated feature)</h2>
+<p>ASAP has a standard Android build and a separate Google Play SMS-review build. The standard build does not request <code>READ_SMS</code> or <code>RECEIVE_SMS</code>. The SMS-review build is designed for optional, consent-based financial SMS detection and is <strong>not authorized for public release until Google Play's applicable permission review is completed</strong>.</p>
+<p>Where this feature is lawfully enabled, the user must opt in and grant Android permission. The app examines incoming inbox entries locally after the consent boundary, identifies candidate financial alerts, and places them in a review queue. It does not automatically post detected events to the ledger or send SMS contents to the developer. The user can opt out or revoke permission. SMS content is not included in normal cloud auto-backup.</p>
+<h2>4. Data collected by third-party components</h2>
+<p>The bundled <strong>Google ML Kit text recognition</strong> software may send technical diagnostics and usage information to Google over encrypted connections. Google's published Android ML Kit disclosure describes information such as device manufacturer/model and OS version, app package/version, a per-installation identifier, performance and error metrics, and API configuration or input metadata. These technical data are separate from your financial ledger and receipt-image contents. Google states in its ML Kit disclosure that it does not transfer this diagnostic data to third parties.</p>
+<p>See <a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noopener noreferrer">Google's ML Kit data disclosure</a> for more detail. The app does not currently include an advertising SDK, a developer-operated analytics SDK, or an account-based cloud-sync backend. Any future features that materially change data handling will require a policy and Google Play Data Safety update.</p>
+<h2>5. Android permissions and user choices</h2>
+<ul>
+<li><strong>Notifications:</strong> optional for reminders and applicable review notifications; messages avoid exposing sensitive financial information on the lock screen.</li>
+<li><strong>Microphone:</strong> requested only for optional voice entry.</li>
+<li><strong>Biometric authentication:</strong> optional, via the Android system when App Lock is enabled.</li>
+<li><strong>SMS read/receive:</strong> restricted to the separate approval-gated SMS review build, and not granted by default.</li>
+<li><strong>Internet/network state:</strong> may appear in the installed app because Google's ML Kit diagnostic transport uses them; no developer financial-data server is used.</li>
+<li><strong>Boot and background operation:</strong> used for bounded local reminder and, if enabled, SMS recovery tasks, subject to Android restrictions.</li>
+</ul>
+<h2>6. Storage, backups and security</h2>
+<p>Your local data is held in the Android application sandbox. Financial events use a local auditable ledger, and optional App Lock can restrict app access. Users can export encrypted local backups (<code>.etbak</code>) protected using AES-256-GCM with a user-selected passphrase. The app has no built-in online backup or mandatory login in this release.</p>
+<p>If you manually export an encrypted backup or report to device storage, email, or a cloud destination selected through Android's picker, copies outside ASAP's private storage are managed by you and the destination provider. The app excludes its private financial database, receipts, PIN-related settings and SMS consent state from Android automatic cloud backup and phone-to-phone transfer.</p>
+<h2>7. Retention and deletion</h2>
+<p>Local records remain on the device until the user deletes them, clears app storage, or uninstalls the app. To delete local data, open <strong>Settings → Privacy &amp; Data → Wipe All Local Data</strong>, complete any required App Lock verification, and confirm deletion. The wipe removes local financial records and supported private app files. Some manually exported backups/reports and copies in other applications or cloud services are outside the wipe's scope.</p>
+<p>Google ML Kit technical diagnostics sent to Google are not held in ASAP's local ledger, and an ASAP local-data wipe cannot remove them from Google's systems. For detailed instructions and limitations, see <a href="data-deletion.html">Data Deletion and Requests</a>.</p>
+<h2>8. Children, advertising, and payments</h2>
+<p>ASAP's intended audience is adults. This release does not contain advertisements or sell core financial features. The app does not initiate bank transfers or payments. Users should review financial candidates before approving any transaction.</p>
+<h2>9. Contact and updates</h2>
+<p>For privacy concerns and support, email <a href="mailto:aditi.piyush948@gmail.com">aditi.piyush948@gmail.com</a>. We may revise this policy when the app's permissions, features or data handling change, and will update the revision date above.</p>
+
+<footer>© 2026 Aditi Apps Worlds · ASAP: Expense &amp; Money Manager · Support: <a href="mailto:aditi.piyush948@gmail.com">aditi.piyush948@gmail.com</a></footer>
+</main></body></html>
